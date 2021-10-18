@@ -29,9 +29,7 @@ namespace PigDice {
             return score;
         }
 
-        public bool addToScore() {
-            Dice dice = new Dice();
-            int newRoll = dice.diceRoll();
+        public bool addToScore(int newRoll) {
 
             if (newRoll != 1) {
                 score += newRoll;
